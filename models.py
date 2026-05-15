@@ -1,4 +1,3 @@
-```python
 from datetime import datetime
 from typing import Optional
 from sqlmodel import SQLModel, Field, create_engine, Session
@@ -19,4 +18,3 @@ class Budget(SQLModel, table=True):
     actual_expense: float = Field(default=0.0)
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
-```
